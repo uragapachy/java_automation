@@ -1,0 +1,105 @@
+Test Case
+TC01.
+ Summary:"Successful login with valid credentials"
+ Preconditions: The user with valid credentials is created
+   Steps:
+     1.Go to side usins the URL (http://v3.test.itpmgroup.com/login);
+     2. Enter valid login into login input;
+     3. Enter valid password into password input;
+     4. Click [Вход] button;
+ Expected result: Successful login with valid credentials.
+   Post condition:
+   1.Click avatar in  top right side.
+   2.Click [Выход] button;
+
+
+
+ TC02.
+ Summary:" Successful  profile adding with "Сотридники" form"
+ Pre-condition:
+      1:Verify that the profile you want to add does not exist
+ Steps:
+      1.Go to side usins the URL (http://v3.test.itpmgroup.com/login);
+      2. Enter valid login into login input;
+      3. Enter valid password into password input;
+      4. Click [Вход] button;
+      5. Click "Словари " item in left side menu;
+      6. Click "Сотрудники" item in left side menu;
+      7. Click [+] button in the top right side;
+      8. Enter valid worker surname in to "Worker surname" input;
+      9. Enter valid worker name in to "Worker name" input;
+      10.Enter valid worker middle name in to "Worker middle name" input;
+      11.Enter valid Worker phone name in to "Worker phone" input;
+      12.Click [Создать] button.
+  Expected result:  Successful  profile adding in "Сотридники" form.
+  Post condition:
+     1.Check  if the profile is created.
+     2.If the profile is created delete.
+     2.Click avatar in the top right side.
+     3.Click [Выход] button
+
+  TC03.
+   Summary:" Successful delete profile  from "Сотридники" form"
+   Steps:
+        1.Go to side usins the URL (http://v3.test.itpmgroup.com/login);
+        2. Enter valid login into login input;
+        3. Enter valid password into password input;
+        4. Click [Вход] button;
+        5. Click "Словари " item in left side menu;
+        6. Click "Сотрудники" item in left side menu;
+        7. Click [+] button in the top right side;
+        8. Enter valid worker surname in to "Worker surname" input;
+        9. Enter valid worker name in to "Worker name" input;
+        10.Enter valid worker middle name in to "Worker middle name" input;
+        11.Enter valid Worker phone name in to "Worker phone" input;
+        12.Click [Создать] button.
+        13.Find created profile in the list and open it;
+        14.Click [Удалить] button;
+
+    Expected result:  Successful delete profile from "Сотридники" form.
+    Post condition:
+       1.Click avatar in the top right side.
+       2.Click [Выход] button
+
+    TC04.
+       Summary:" Successful  profile adding with "Установка" form"
+       Pre-condition:
+             1:Verify that the profile you want to add does not exist
+       Steps:
+            1.Go to side usins the URL (http://v3.test.itpmgroup.com/login);
+            2. Enter valid login into login input;
+            3. Enter valid password into password input;
+            4. Click [Вход] button;
+            5. Click "Установка" item in left side menu;
+            6. Click [+] button in the top right side;
+            7. Installation valid date in to "Installation date" input;
+            8. Enter valid apparatus in to "Апарат" input;
+            9. Enter valid worker in to "Сотрудник" input;
+            10.Click [Создать] button.
+     Expected result:Successful  profile adding with "Установка" form and display in the list "Список работ"
+            Post condition:
+             1.Check  if the profile is created.
+             2.If the profile is created delete.
+             2.Click avatar in the top right side.
+             3.Click [Выход] button
+
+TC05.
+   Summary:" Successful delete profile  from "Установка" form"
+   Steps:
+        1.Go to side usins the URL (http://v3.test.itpmgroup.com/login);
+         2. Enter valid login into login input;
+         3. Enter valid password into password input;
+         4. Click [Вход] button;
+         5. Click "Установка" item in left side menu;
+         6. Click [+] button in the top right side;
+         7. Installation valid date in to "Installation date" input;
+         8. Enter valid apparatus in to "Апарат" input;
+         9. Enter valid worker in to "Сотрудник" input;
+        10.Click [Создать] button.
+        13.Find created profile in the list "Список работ" and open it;
+        14.Click [Удалить] button;
+
+    Expected result:  Successful delete profile from "Установка" form.
+    Post condition:
+       1.Click avatar in the top right side.
+       2.Click [Выход] button

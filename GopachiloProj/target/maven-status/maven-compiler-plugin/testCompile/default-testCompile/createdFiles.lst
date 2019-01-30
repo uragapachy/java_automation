@@ -1,0 +1,11 @@
+login\LoginNew.class
+login\LoginNewWithDataFromExel.class
+login\UnValidLoginWithParameters.class
+login\LoginWithoutPageObject.class
+mainPack\AppTest.class
+suits\SmokeSuit.class
+login\UnValidLoginWithParametersFromExel.class
+parentTest\ParentTest.class
+testDB\TestDB.class
+parentTest\ParentTest$1.class
+spares\AddNewSpare.class

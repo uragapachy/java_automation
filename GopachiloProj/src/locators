@@ -1,0 +1,80 @@
+#Login Page
+#http://v3.test.itpmgroup.com/login
+Login.form.name          = xpath(".//p[text()='Авторизация']")
+Login.input.email        = xpath(".//input[@name='_username']")
+Login.input.password     = xpath(".//input[@id='password']")
+Login.input.submit       = xpath(".//button[@type='submit']")
+login.form.href          =xpath(".//a[@href='#' and text()='Напомнить пароль']")
+login.form.href          =xpath(".//a[@href='register.html' and text()='Зарегистрироваться']")
+
+#Main Page
+#1
+Main.page.name                 = xpath(".//h1")
+Main.page.left-hide avatar     = xpath(".//img[@class='user-image']")
+Main.username                  = xpath(".//*[@class='hidden-xs']")
+Main.page.header               =xpath(".//header[@class='main-header']")
+Main.leftmenu.name             = xpath(".//a[@class='logo']")
+Main.leftmenu.dashboard        = xpath(".//li[@id='dashboard']")
+Main.leftmenu.dictionary       = xpath(".//li[@id='dictionary']")
+Main.leftmenu.service_apparat  = xpath(".//li[@id='service_apparat']")
+Main.leftmenu.installation     = xpath(".//li[@id='installation']")
+Main.leftmenu.deal             = xpath(".//li[@id='deal']")
+Main.leftmenu.report           = xpath(".//li[@id='report']")
+Main.leftmenu.username         = xpath(".//*[@class='pull-left info']//p")
+Main.leftmenu.userstatus       = xpath(".//*[@class='pull-left info']//a")
+
+
+#Apparat Dictionary
+Dict.Apparat.Add.Button               = xpath(".//a[@href='http://v3.test.itpmgroup.com/dictionary/apparat/edit' and @data-original-title='Add']")
+Dict.Apparat.NewApparatNumber.Input   = xpath(".//input[@id='apparat_apparatNumber']")
+Dict.Apparat.NewApparatComment.Input  = xpath(".//input[@id='apparat_apparatComment']")
+Dict.Apparat.NewApparat.Create.Button = xpath(".//button[@type = 'submit' and @name = 'add']")
+
+#Workers Dictionary
+Work.Dictionary.name               = xpath(".//h1")
+Work.Dictionary.button[+]          = xpath(".//a//i[@class='fa fa-plus']")
+Work.Dictionary.list               = xpath(".//*[@id='device_list']")
+Work.Dictionary.choose from list   = xpath(".//tr/td[text()='text wich you need']")
+
+  #New Workers Dictionary
+  Workers.NewWorkerSurname.Input   = xpath(".//input[@id='workers_workerSurname']")
+  Workers.NewWorkerNAme.Input      = xpath(".//input[@id='workers_workerName']")
+  Workers.NewWorkerMiddlName.Input = xpath(".//input[@id='workers_workerMiddleName']")
+  Workers.NewWorkerPhone.Input     = xpath(".//input[@id='workers_workerPhone']")
+  Workers.Create.Button            = xpath(".//button[@type = 'submit' and @name = 'add']")
+  Workers.Delete.Button            = xpath(".//button[@name='delete']")
+
+
+#Installation list
+#3
+Inst.page.name = xpath(".//h1")
+Inst.list.name = xpath(".//h3")
+Inst.list.datetime = xpath(".//tabel[@id='device_list']//tbody//td[1]")
+Inst.list.apparat = xpath(".//tabel[@id='device_list']//tbody//td[2]")
+Inst.list.worker = xpath(".//tabel[@id='device_list']//tbody//td[3]")
+Inst.add = xpath(".//a[@data-original-title='Add']")
+Inst.list.delete = xpath(".//button[@type='submit' and @name='delete']")
+
+
+#New Instalation    Data for creation (09/11/18 21:00  Тест аппарат Тест сотрудник 0911)
+#3
+NewInst.Menu.Name = xpath(".//h3")
+NewInst.Date.DayInput = xpath(".//form//select[@id='installation_installationDate_date_day']")
+NewInst.Date.DayValue = xpath(".//form//select[@id='installation_installationDate_date_day']//option[@value='9']")
+NewInst.Date.MonthInput = xpath(".//form//select[@id='installation_installationDate_date_month']")
+NewInst.Date.MonthValue =xpath(".//form//select[@id='installation_installationDate_date_month']//option[@value='11']")
+NewInst.Date.YearInput = xpath(".//form//select[@id='installation_installationDate_date_year']")
+NewInst.Date.YearValue = xpath(".//form//select[@id='installation_installationDate_date_year']//option[@value='2018']")
+NewInst.Date.HHinput = xpath(".//form//select[@id='installation_installationDate_time_hour']")
+NewInst.Date.HHValue = xpath(".//form//select[@id='installation_installationDate_time_hour']//option[@value='21']")
+NewInst.Date.MinInput = xpath(".//form//select[@id='installation_installationDate_time_minute']")
+NewInst.Date.MinValue = xpath(".//form//select[@id='installation_installationDate_time_minute']//option[@value='00']")
+NewInst.Apparat.Input = xpath(".//form//select[@id='installation_apparat']")
+NewInst.Apparat.Value = xpath(".//form//select[@id='installation_apparat']//option[contains(text(), 'Тест аппарат 0911')]")
+NewInst.Worker.Input = xpath(".//form//select[@id='installation_worker']")
+NewInst.Worker.Value =  xpath(".//form//select[@id='installation_worker']//option[contains(text(), 'Тест сотрудник 0911')]")
+
+#NewInst.Instdate = xpath(".//form//label[text()='Installation date']")
+#NewInst.Apparat = xpath(".//form//label[@for='installation_apparat']")
+#NewInst.Worker = xpath(".//form//label[@for='installation_worker']")
+NewInst.Button.Create = xpath(".//button[@type='submit' and @name='add']")
